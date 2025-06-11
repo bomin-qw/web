@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>장르별</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'SUIT', sans-serif;
+      padding-bottom: 150px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .poster-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+      justify-content: center;
+    }
+
+    .poster-img {
+      width: 190px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      margin-top: 40px;
+    }
+
+    .poster-img:hover {
+      transform: scale(1.05);
+    }
+
+    .fixed-btn {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: white;
+      font-size: 15px;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+      z-index: 1000;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      top: 30px;
+      right: 30px;
+      background-color: red;
+    }
+
+    .btn-top-footer {
+      background-color: red;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-top-footer:hover {
+      background-color: #c62828;
+    }
+
+    .view-all {
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+      padding-top: 7px;
+    }
+
+    .view-all:hover {
+      color: #fab1b1;
+    }
+
+    .genre-nav a {
+      font-size: 1.1rem;
+      margin-left: 15px;
+      text-decoration: none;
+      color: #aaa;
+    }
+
+    .genre-nav a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-4">
+
+    <div class="d-flex align-items-center mb-4">
+      <h1 class="mb-0 me-4">장르별</h1>
+      <nav class="genre-nav">
+        <a href="#romance">로맨스</a>
+        <a href="#thriller">스릴러</a>
+        <a href="#fantasy">사극/판타지</a>
+      </nav>
+    </div>
+
+    <h2 id="romance">
+      <span>로맨스</span>
+      <a href="romance.html" class="view-all">전체보기</a>
+    </h2>
+    <div class="poster-row">
+      <a href="detail6.html"><img src="금주.jpg" class="poster-img" alt="금주를 부탁해"></a>
+      <a href="r1.html"><img src="춘화.jpg" class="poster-img" alt="춘화연애담"></a>
+      <a href="r2.html"><img src="멜로무비.jpg" class="poster-img" alt="멜로무비"></a>
+      <a href="detail1.html"><img src="e.jpg" class="poster-img" alt="미지의 서울"></a>
+      <a href="r3.html"><img src="언젠가는.jpg" class="poster-img" alt="언젠가는 슬기로울 전공의생활"></a>
+    </div>
+
+    <h2 id="thriller">
+      <span>스릴러</span>
+      <a href="thriller.html" class="view-all">전체보기</a>
+    </h2>
+    <div class="poster-row">
+      <a href="detail2.html"><img src="q.jpg" class="poster-img" alt="나인퍼즐"></a>
+      <a href="s1.html"><img src="하이퍼.jpg" class="poster-img" alt="하이퍼나이프"></a>
+      <a href="s2.html"><img src="무빙.jpg" class="poster-img" alt="무빙"></a>
+      <a href="s3.html"><img src="오징어.jpg" class="poster-img" alt="오징어 게임 시즌3"></a>
+      <a href="s4.html"><img src="약한영웅.jpg" class="poster-img" alt="약한영웅 Class2"></a>
+    </div>
+
+    <h2 id="fantasy">
+      <span>사극 / 판타지</span>
+      <a href="fantasy.html" class="view-all">전체보기</a>
+    </h2>
+    <div class="poster-row">
+      <a href="p1.html"><img src="탄금.jpg" class="poster-img" alt="탄금"></a>
+      <a href="p2.html"><img src="원경.jpg" class="poster-img" alt="원경"></a>
+      <a href="detail5.html"><img src="귀궁.jpg" class="poster-img" alt="귀궁"></a>
+      <a href="p3.html"><img src="천국.jpg" class="poster-img" alt="천국보다 아름다운"></a>
+      <a href="p4.html"><img src="남주.jpg" class="poster-img" alt="남주의 첫날밤을 가져버렸다"></a>
+    </div>
+  </div>
+
+
+  <a href="index.html" class="fixed-btn btn-home" title="홈으로 돌아가기">홈</a>
+
+  <div class="text-center my-5">
+    <a href="#" class="btn btn-top-footer">⬆ 맨 위로</a>
+  </div>
+
+</body>
+</html>

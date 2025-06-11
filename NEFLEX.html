@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>넷플릭스 전체보기</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'SUIT', sans-serif;
+      padding-bottom: 100px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid white;
+      padding-bottom: 15px;
+    }
+
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .poster-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .poster-img:hover {
+      transform: scale(1.05);
+    }
+
+    .fixed-btn {
+      position: fixed;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    .btn-home {
+      top: 30px;
+      right: 30px;
+      background-color: red;
+    }
+
+    .btn-back {
+      bottom: 30px;
+      right: 30px;
+      background-color: #757575;
+    }
+
+    .btn-back:hover {
+      background-color: #5e5e5e;
+    }
+
+    .btn-top-footer {
+      background-color: red;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-top-footer:hover {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-4">
+    <h1>넷플릭스 전체보기</h1>
+
+    <div class="poster-grid">
+      <a href="n1.html"><img src="광장.jpg" class="poster-img" alt="광장"></a>
+      <a href="s3.html"><img src="오징어.jpg" class="poster-img" alt="오징어 게임 시즌3"></a>
+      <a href="p1.html"><img src="탄금.jpg" class="poster-img" alt="탄금"></a>
+      <a href="s4.html"><img src="약한영웅.jpg" class="poster-img" alt="약한 영웅 Class 2"></a>
+      <a href="n2.html"><img src="더글로리.jpg" class="poster-img" alt="더글로리"></a>
+
+      <a href="s6.html"><img src="악연.jpg" class="poster-img" alt="악연"></a>
+      <a href="n3.html"><img src="중증.jpg" class="poster-img" alt="중증외상센터"></a>
+      <a href="n4.html"><img src="하이라키.jpg" class="poster-img" alt="하이라키"></a>
+      <a href="s10.html"><img src="사냥개들.jpg" class="poster-img" alt="사냥개들"></a>
+      <a href="n5.html"><img src="마스크걸.jpg" class="poster-img" alt="마스크걸"></a>
+
+    </div>
+  </div>
+
+ 
+  <a href="index.html" class="fixed-btn btn-home" title="홈으로 돌아가기">홈</a>
+
+
+  <a href="javascript:history.back()" class="fixed-btn btn-back" title="뒤로가기">←</a>
+
+ 
+  <div class="text-center my-5">
+    <a href="#" class="btn btn-top-footer">⬆ 맨 위로</a>
+  </div>
+
+</body>
+</html>
